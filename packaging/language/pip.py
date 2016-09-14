@@ -374,7 +374,7 @@ def main():
                     has_vcs = True
                     break
 
-        if has_vcs and module.params['editable']:
+        if module.params['editable']:
             args_list = []  # used if extra_args is not used at all
             if extra_args:
                 args_list = extra_args.split(' ')
